@@ -1,10 +1,10 @@
-# @yandu/plugin-search-arxiv
+# yandu-plugin-search-arxiv
 
 Yandu arXiv search plugin.
 
 ## Registration
 
 ```typescript
-import plugin from '@yandu/plugin-search-arxiv';
+import plugin from 'yandu-plugin-search-arxiv';
 plugin.register(system);
 ```

@@ -1,5 +1,5 @@
 {
-  "name": "@yandu/plugin-search-arxiv",
+  "name": "yandu-plugin-search-arxiv",
   "version": "1.0.0",
   "description": "Yandu arXiv search plugin",
   "type": "module",
