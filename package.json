@@ -13,10 +13,11 @@
     "prepublishOnly": "npm run build",
     "test": "npm run build && node --test test/*.test.js",
     "typecheck": "tsc --noEmit",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "prepack": "npm run test"
   },
   "dependencies": {
-    "@yandu/types": "workspace:*",
+    "@yandu/types": ">=0.0.7 <0.2.0",
     "fast-xml-parser": "^4.5.0"
   },
   "devDependencies": {
@@ -25,5 +26,12 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "bin": {
+    "yandu-search-arxiv": "./dist/worker.js"
+  },
+  "yandu": {
+    "worker": "./dist/worker.js",
+    "protocol": "jsonl-v1"
   }
 }
